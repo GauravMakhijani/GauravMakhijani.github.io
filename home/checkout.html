@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BAM!-Checkout</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- link to css pages-->
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--link rel="stylesheet" type="text/css" href=""-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+</head>
+<body>
+
+		</div>
+		<div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="../images/bam-logo-white.png" alt="" width="150" height="72">
+        <h1 class="text-yellow">Checkout!</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">IKIGAI</h6>
+                <small class="text-muted">By Héctor García</small>
+              </div>
+              <span class="text-muted">Rs 1,075</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">The Alchemist</h6>
+                <small class="text-muted">By  Paulo Coelho</small>
+              </div>
+              <span class="text-muted">Rs 499</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Elon Musk</h6>
+                <small class="text-muted">By  Ashlee Vance </small>
+              </div>
+              <span class="text-muted">Rs 615</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>WELCOME20</small>
+              </div>
+              <span class="text-success">-Rs 437</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (INR)</span>
+              <strong>Rs 1,751</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3 text-light">Billing address</h4>
+          <form class="needs-validation" action="thankyou.html" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName" class="text-light">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName" class="text-light">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="username" class="text-light">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="text-light">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address" class="text-light">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2" class="text-light">Address 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country" class="text-light">Country</label>
+                <select class="custom-select d-block w-100" id="country" required>
+                  <option value="">Choose...</option>
+                  <option>United States</option>
+                  <option>India</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state" class="text-light">State</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                  <option>Madhya Pradesh </option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip" class="text-light">PIN</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  PIN code required.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label text-light" for="same-address">Shipping address is the same as my billing address</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label text-light" for="save-info">Save this information for next time</label>
+            </div>
+            <hr class="mb-4">
+
+            <h4 class="mb-3 text-light">Payment</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label text-light" for="credit">Credit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label text-light" for="debit">Debit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label text-light" for="paypal">Paypal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name" class="text-light">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback ">
+                  Name on card is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number" class="text-light">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration " class="text-light">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <small class="text-muted">Format: dd/mm/yyyy</small>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-cvv" class="text-light">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button  class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020-2021 Books A Million!</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    	
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
